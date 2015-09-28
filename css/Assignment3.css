@@ -1,0 +1,78 @@
+/*
+Name: Zorigtbaatar Chuluundorj
+Email: zorigtbaatar_chuluundorj@student.uml.edu
+Status: Undergraduate at Umass Lowell, currently taking GUI 1
+Date: September 10, 2015
+Assignment 3: This css file is used by Assignment3.html.
+TAssignment3.html contains information about famous paintings.
+This files purpose is to style those information
+*/
+
+/*
+    Centers the heading of the page
+    sets the font to "Times New Roman"
+    Sets fond size to 30 points
+    Italices the heading
+*/
+.title {
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 30pt;
+    font-weight: 100;
+    font-style: italic;
+    color: #DCDCDC;
+}
+
+/*
+    sets the background image and its properties
+*/
+body {
+    background-image: url("http://www.acegoals.com/wp-content/uploads/2015/01/webpage-background-image.jpg");
+    position: static;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+    sets properties of the div element with class Painting
+*/
+
+div.Painting {
+    background-color: white;
+    width: 40%;
+    padding: 10px;
+    border: 5px #8080FF;
+    margin: 40px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*
+    sets the properties of every odd element of div element with class Painting
+    floats the text boxes towards the left
+*/
+
+div.Painting:nth-child(odd) {
+    background-color: #D6EBFF;
+    float: left;
+}
+
+/*
+    sets the properties of every event element of div element with class Painting
+    floats the text boxes towards the right
+*/
+
+div.Painting:nth-child(even) {
+    background-color: #f0ffff;
+    float: right;
+}
+
+/*
+    sets the properties of every element with class
+    PaintingName, ArtistName, Year, or Location
+*/
+.PaintingName, .ArtistName, .Year, .Location {
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 10pt;
+}
